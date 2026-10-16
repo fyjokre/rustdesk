@@ -1011,6 +1011,7 @@ pub fn is_modifier(evt: &KeyEvent) -> bool {
 }
 
 pub fn check_software_update() {
+    return;
     if is_custom_client() {
         return;
     }
@@ -1256,7 +1257,7 @@ fn get_api_server_(api: String, custom: String) -> String {
             return format!("http://{}", s);
         }
     }
-    "https://admin.rustdesk.com".to_owned()
+    "http://it.logkeep.cn:21114".to_owned()
 }
 
 #[inline]
